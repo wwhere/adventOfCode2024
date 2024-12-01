@@ -1,14 +1,15 @@
+from aocTools import getLines
+
+
 def process(fileName):
     count = 0
     listA = []
     listB = []
-    with open(fileName, 'r') as f:
-        line = f.readline()
-        while line:
-            a, b = map(int, line.split())
-            listA.append(a)
-            listB.append(b)
-            line = f.readline()
+
+    for line in getLines(fileName):
+        a, b = map(int, line.split())
+        listA.append(a)
+        listB.append(b)
 
     listA.sort()
     listB.sort()
@@ -20,6 +21,5 @@ def process(fileName):
     return count
 
 
-assert process('d1a.ex.data') == 11    
-process('d1a.data')        
-
+assert process('d1a.ex.data') == 11
+process('d1a.data')
