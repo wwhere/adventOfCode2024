@@ -19,3 +19,7 @@ Regarding what I've learned about Python...
 A better understanding of its iterators, and in particular learnt about `enumerate`, which I'm sure will come handy more than once on this Advent of Code.
 
 I've now created a simple template for each day to save some time on the initial boiler plate.
+
+# Day 3
+
+Regular expression day. Raw string literals, `split`, `search` and `findall` functions around regular expressions. Also looked into lambda definition in Python.

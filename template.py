@@ -7,6 +7,7 @@ def process(fileName):
     for line in getLines(fileName):
         continue
 
+    print(f'{fileName}: {count}')
     return count
 
 
