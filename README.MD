@@ -23,3 +23,7 @@ I've now created a simple template for each day to save some time on the initial
 # Day 3
 
 Regular expression day. Raw string literals, `split`, `search` and `findall` functions around regular expressions. Also looked into lambda definition in Python.
+
+# Day 4
+
+A bit to learn today around arrays. `strings` are `arrays`, which makes this easy. Also some more lambda, and some more practice with `in`. 
