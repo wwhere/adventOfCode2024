@@ -26,4 +26,10 @@ Regular expression day. Raw string literals, `split`, `search` and `findall` fun
 
 # Day 4
 
-A bit to learn today around arrays. `strings` are `arrays`, which makes this easy. Also some more lambda, and some more practice with `in`. 
+A bit to learn today around arrays. `strings` are `arrays`, which makes this easy. Also some more lambda, and some more practice with `in`.  
+
+# Day 5
+
+First day of graphs with Python. I messed this one quite a bit in part 1, not realising the actual ask didn't care about transitive relationships between pages. Just got lucky my way of solving it actually worked. By part 2, I realised, which made the solution much simpler. I am not going to refactor this, rather leave the overcomplicated solution.
+
+Regarding learnings... new for me have been the use of `list()` `dict()` `set()` `intersection()` and `sorted()`. All pretty basic stuff, but still useful. I am however feeling my code is very much not Pythonic. Not sure if I'll manage to improve that during this advent of code. 
