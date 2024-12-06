@@ -33,3 +33,9 @@ A bit to learn today around arrays. `strings` are `arrays`, which makes this eas
 First day of graphs with Python. I messed this one quite a bit in part 1, not realising the actual ask didn't care about transitive relationships between pages. Just got lucky my way of solving it actually worked. By part 2, I realised, which made the solution much simpler. I am not going to refactor this, rather leave the overcomplicated solution.
 
 Regarding learnings... new for me have been the use of `list()` `dict()` `set()` `intersection()` and `sorted()`. All pretty basic stuff, but still useful. I am however feeling my code is very much not Pythonic. Not sure if I'll manage to improve that during this advent of code. 
+
+# Day 6
+
+Quite bad and ugly code today, with lot of bad code duplication. Not proud of this one.
+
+Specific new things I've used this day: `match` expression.
