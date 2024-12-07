@@ -39,3 +39,7 @@ Regarding learnings... new for me have been the use of `list()` `dict()` `set()`
 Quite bad and ugly code today, with lot of bad code duplication. Not proud of this one.
 
 Specific new things I've used this day: `match` expression.
+
+# Day 7
+
+Quite a simple one today, hasn't given me the chance of using anything stricitly new to me in Python.
