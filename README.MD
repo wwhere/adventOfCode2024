@@ -43,3 +43,7 @@ Specific new things I've used this day: `match` expression.
 # Day 7
 
 Quite a simple one today, hasn't given me the chance of using anything stricitly new to me in Python.
+
+# Day 8
+
+Another surprisingly straightforward day. Has let me take an initial look into classes in Python, defining operator behaviours and making them hashable. Also, how to use `__name__` to know if a file is the main file being executed or if it is imported as a module.
