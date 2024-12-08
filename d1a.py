@@ -1,23 +1,25 @@
+"""Advent of Code specific utilities"""
 from aocTools import getLines
 
 
-def process(fileName):
+def process(filename):
+    """Main processing for the day"""
     count = 0
-    listA = []
-    listB = []
+    list_a = []
+    list_b = []
 
-    for line in getLines(fileName):
+    for line in getLines(filename):
         a, b = map(int, line.split())
-        listA.append(a)
-        listB.append(b)
+        list_a.append(a)
+        list_b.append(b)
 
-    listA.sort()
-    listB.sort()
+    list_a.sort()
+    list_b.sort()
 
-    for a, b in zip(listA, listB):
+    for a, b in zip(list_a, list_b):
         count += abs(a-b)
 
-    print(f'{fileName}: {count}')
+    print(f'{filename}: {count}')
     return count
 
 

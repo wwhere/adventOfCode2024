@@ -1,11 +1,14 @@
+
+"""modules"""
 from aocTools import getLines
 
-dayData = "8a"
-
-empty = '.'
+DAY_DATA = "8a"
+EMPTY = '.'
 
 
 class Vector2:
+    """A Class with a X and a Y value that can be added and substracted"""
+
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -23,24 +26,50 @@ class Vector2:
         return hash((self.x, self.y))
 
 
-def readInput(fileName):
+def read_input(filename):
+    """Read the daily data
+
+    Args:
+        filename (str): Name of the data file
+
+    Returns:
+        tuple[list, dict]: the grid and the list of antennas positions
+    """
     antennas = {}
     grid = []
-    for line in getLines(fileName):
-        gridLine = []
+    for line in getLines(filename):
+        grid_line = []
         for c in line:
-            if c != empty:
-                antennas[c] = antennas.get(c, []) + [Vector2(len(grid), len(gridLine))]
-            gridLine.append(c)
-        grid.append(gridLine)
+            if c != EMPTY:
+                antennas[c] = antennas.get(c, []) + [Vector2(len(grid), len(grid_line))]
+            grid_line.append(c)
+        grid.append(grid_line)
     return grid, antennas
 
 
-def inGrid(grid, position: Vector2):
-    return not (position.x < 0 or position.x >= len(grid) or position.y < 0 or position.y >= len(grid[position.x]))
+def in_grid(grid, position: Vector2):
+    """Is a position inside a grid
+
+    Args:
+        grid (list): A list of lists forming a grid
+        position (Vector2): A position (x,y)
+
+    Returns:
+        bool: True if the position is inside the grid
+    """
+    return 0 <= position.x < len(grid) and 0 <= position.y < len(grid[position.x])
 
 
-def findAntinodesForAntenna(grid, positions):
+def find_antinodes_for_antenna(grid, positions):
+    """Finds all antinodes for a list of antenna positions
+
+    Args:
+        grid (list): List of lists
+        positions (list): List of antenna positions
+
+    Returns:
+        list: List of antinode positions
+    """
     antinodes = []
 
     for i1 in range(len(positions)-1):
@@ -50,20 +79,28 @@ def findAntinodesForAntenna(grid, positions):
             dist = p2-p1
             antinode1 = p1 - dist
             antinode2 = p2 + dist
-            if inGrid(grid, antinode1):
+            if in_grid(grid, antinode1):
                 antinodes.append(antinode1)
-            if inGrid(grid, antinode2):
+            if in_grid(grid, antinode2):
                 antinodes.append(antinode2)
 
     return antinodes
 
 
 def process(fileName):
-    grid, antennas = readInput(fileName)
+    """Process daily
+
+    Args:
+        fileName (str): Data file name
+
+    Returns:
+        int: solution
+    """
+    grid, antennas = read_input(fileName)
 
     antinodes = []
-    for antenna in antennas.keys():
-        antinodes = antinodes + findAntinodesForAntenna(grid, antennas[antenna])
+    for positions in antennas.values():
+        antinodes += find_antinodes_for_antenna(grid, positions)
 
     antinodes = list(dict.fromkeys(antinodes))
 
@@ -74,5 +111,5 @@ def process(fileName):
 
 
 if __name__ == "__main__":
-    assert process(f'd{dayData}.ex.data') == 14
-    process(f'd{dayData}.data')
+    assert process(f'd{DAY_DATA}.ex.data') == 14
+    process(f'd{DAY_DATA}.data')

@@ -1,4 +1,4 @@
-from d8a import Vector2, inGrid, readInput
+from d8a import Vector2, in_grid, read_input
 
 
 def findAntinodesForAntenna(grid, positions):
@@ -14,12 +14,12 @@ def findAntinodesForAntenna(grid, positions):
             p2: Vector2 = positions[i2]
             dist = p2-p1
             antinode = p1
-            while inGrid(grid, antinode-dist):
+            while in_grid(grid, antinode-dist):
                 antinode = antinode-dist
                 antinodes.append(antinode)
 
             antinode = p2
-            while inGrid(grid, antinode+dist):
+            while in_grid(grid, antinode+dist):
                 antinode = antinode+dist
                 antinodes.append(antinode)
 
@@ -27,7 +27,7 @@ def findAntinodesForAntenna(grid, positions):
 
 
 def process(fileName):
-    grid, antennas = readInput(fileName)
+    grid, antennas = read_input(fileName)
 
     antinodes = []
     for antenna in antennas.keys():
