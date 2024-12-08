@@ -1,4 +1,4 @@
-from aocTools import getLines
+from aoc_tools import read_lines
 import re
 from functools import reduce
 from operator import add
@@ -9,7 +9,7 @@ mulOperationRegEx = re.compile(r'mul\((\d{1,3}),(\d{1,3})\)')
 
 def process(fileName):
     count = 0
-    for line in getLines(fileName):
+    for line in read_lines(fileName):
         validOperations = mulOperationRegEx.findall(line)
         count += reduce(add, map(lambda op: int(op[0]) * int(op[1]), validOperations))
     print(f'{fileName}: {count}')

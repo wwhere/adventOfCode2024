@@ -1,4 +1,4 @@
-from aocTools import getLines
+from aoc_tools import read_lines
 import re
 from functools import reduce
 from operator import add
@@ -13,7 +13,7 @@ doOrDoNotRegEx = re.compile(r'(do\(\)|don\'t\(\))')
 def process(fileName):
     count = 0
     operationsEnabled = True
-    for line in getLines(fileName):
+    for line in read_lines(fileName):
         splittedLine = doOrDoNotRegEx.split(line)
         for fragment in splittedLine:
             if fragment == doOperation:

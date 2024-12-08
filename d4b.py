@@ -1,4 +1,4 @@
-from aocTools import getLines
+from aoc_tools import read_lines
 dayData = "4a"
 
 
@@ -15,7 +15,7 @@ def checkPossibility(grid, x, y):
 def process(fileName):
     count = 0
     gridLines = []
-    for line in getLines(fileName):
+    for line in read_lines(fileName):
         gridLines.append(line)
 
     for y, line in enumerate(gridLines):

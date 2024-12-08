@@ -1,10 +1,10 @@
-from aocTools import getLines
+from aoc_tools import read_lines
 dayData = "7a"
 
 
 def process(fileName):
     count = 0
-    for line in getLines(fileName):
+    for line in read_lines(fileName):
         a, b = line.split(': ')
         result = int(a)
         numbers = map(int, b.split(' '))

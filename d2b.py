@@ -1,4 +1,4 @@
-from aocTools import getLines
+from aoc_tools import read_lines
 
 day = "2a"
 
@@ -48,7 +48,7 @@ def checkReport(report, skip=False, skipIndex=0):
 
 def process(fileName):
     count = 0
-    for report in getLines(fileName):
+    for report in read_lines(fileName):
 
         if checkReport(report):
             count += 1

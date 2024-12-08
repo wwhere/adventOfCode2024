@@ -1,6 +1,6 @@
 
 """modules"""
-from aocTools import getLines
+from aoc_tools import read_lines
 
 DAY_DATA = "8a"
 EMPTY = '.'
@@ -37,7 +37,7 @@ def read_input(filename):
     """
     antennas = {}
     grid = []
-    for line in getLines(filename):
+    for line in read_lines(filename):
         grid_line = []
         for c in line:
             if c != EMPTY:
@@ -87,7 +87,7 @@ def find_antinodes_for_antenna(grid, positions):
     return antinodes
 
 
-def process(fileName):
+def process(filename):
     """Process daily
 
     Args:
@@ -96,7 +96,7 @@ def process(fileName):
     Returns:
         int: solution
     """
-    grid, antennas = read_input(fileName)
+    grid, antennas = read_input(filename)
 
     antinodes = []
     for positions in antennas.values():
@@ -106,7 +106,7 @@ def process(fileName):
 
     count = len(antinodes)
 
-    print(f'{fileName}: {count}')
+    print(f'{filename}: {count}')
     return count
 
 

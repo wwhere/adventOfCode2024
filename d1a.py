@@ -1,5 +1,5 @@
 """Advent of Code specific utilities"""
-from aocTools import getLines
+from aoc_tools import read_lines
 
 
 def process(filename):
@@ -8,7 +8,7 @@ def process(filename):
     list_a = []
     list_b = []
 
-    for line in getLines(filename):
+    for line in read_lines(filename):
         a, b = map(int, line.split())
         list_a.append(a)
         list_b.append(b)

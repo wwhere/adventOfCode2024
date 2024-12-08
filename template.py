@@ -1,5 +1,5 @@
 """Advent of Code specific utilities"""
-from aocTools import getLines
+from aoc_tools import read_lines
 
 DAY_DATA = '2a'
 
@@ -14,7 +14,7 @@ def process(filename: str) -> int:
         int: The solution for the data file
     """
     solution = 0
-    for line in getLines(filename):
+    for line in read_lines(filename):
         continue
 
     print(f'{filename}: {solution}')

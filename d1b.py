@@ -1,6 +1,6 @@
 """modules"""
 from collections import defaultdict
-from aocTools import getLines
+from aoc_tools import read_lines
 
 
 def process(filename):
@@ -15,7 +15,7 @@ def process(filename):
     count = 0
     left = defaultdict(lambda: 0)
     right = defaultdict(lambda: 0)
-    for line in getLines(filename):
+    for line in read_lines(filename):
         (a, b) = map(int, line.split())
         left[a] += 1
         count += right[a] * a

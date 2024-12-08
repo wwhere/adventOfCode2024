@@ -1,4 +1,4 @@
-from aocTools import getLines
+from aoc_tools import read_lines
 dayData = "6a"
 
 
@@ -118,7 +118,7 @@ def process(fileName):
     map = []
     guardPosition = (0, 0)
     direction = 'n'
-    for line in getLines(fileName):
+    for line in read_lines(fileName):
         if '^' in line:
             guardPosition = (len(map), line.find('^'))
         map.append(list(line))

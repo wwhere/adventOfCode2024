@@ -1,4 +1,4 @@
-from aocTools import getLines
+from aoc_tools import read_lines
 
 day = "2a"
 
@@ -7,7 +7,7 @@ validRange = range(1, 4)
 
 def process(fileName):
     count = 0
-    for report in getLines(fileName):
+    for report in read_lines(fileName):
         levels = map(int, report.split())
         safe = True
         goingUp = False

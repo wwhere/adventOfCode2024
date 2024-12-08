@@ -1,4 +1,4 @@
-from aocTools import getLines
+from aoc_tools import read_lines
 from collections import defaultdict
 
 dayData = "5a"
@@ -58,7 +58,7 @@ def process(fileName):
 
     readingGraph = True
 
-    for line in getLines(fileName):
+    for line in read_lines(fileName):
         if len(line) < 2:
             readingGraph = False
             continue
