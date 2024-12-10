@@ -47,3 +47,15 @@ Quite a simple one today, hasn't given me the chance of using anything stricitly
 # Day 8
 
 Another surprisingly straightforward day. Has let me take an initial look into classes in Python, defining operator behaviours and making them hashable. Also, how to use `__name__` to know if a file is the main file being executed or if it is imported as a module.
+
+# Day 9 
+
+Worst day so far, took me very long to correct my totally wrong approach to part B. 
+
+In Python learnings, mostly more dealing with classes.
+
+# Day 10
+
+Solution for part B required just a couple of small changes from the solution to part A, which is always nice. 
+
+In learnings, I've used `list comprehension` and `list generators`.
