@@ -21,5 +21,6 @@ def process(filename: str) -> int:
     return solution
 
 
-assert process(f'd{DAY_DATA}.ex.data') == 31
-process(f'd{DAY_DATA}.data')
+if __name__ == "__main__":
+    assert process(f'd{DAY_DATA}.ex.data') == 31
+    process(f'd{DAY_DATA}.data')
