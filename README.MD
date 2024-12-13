@@ -59,3 +59,9 @@ In Python learnings, mostly more dealing with classes.
 Solution for part B required just a couple of small changes from the solution to part A, which is always nice. 
 
 In learnings, I've used `list comprehension` and `list generators`.
+
+# Day 12
+Nothing really new today
+
+# Day 13
+Not much today either. I did look in a bit more detail into numpy, but didn't use anything new in the end
