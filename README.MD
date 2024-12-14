@@ -60,8 +60,16 @@ Solution for part B required just a couple of small changes from the solution to
 
 In learnings, I've used `list comprehension` and `list generators`.
 
+# Day 11
+
+Cache day. Not much more to say.
+
 # Day 12
 Nothing really new today
 
 # Day 13
 Not much today either. I did look in a bit more detail into numpy, but didn't use anything new in the end
+
+# Day 14
+
+Weird part 2 today. I first had to do some manual examination of resulting grids before knowing what to look for.
