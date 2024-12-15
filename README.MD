@@ -73,3 +73,7 @@ Not much today either. I did look in a bit more detail into numpy, but didn't us
 # Day 14
 
 Weird part 2 today. I first had to do some manual examination of resulting grids before knowing what to look for.
+
+# Day 15
+
+One learning to highlight: if a function returns several values on a tuple, you can't just get the first one without explicitly getting the others, or it will actually contain the tuple itself. Quite obvious in retrospect.
