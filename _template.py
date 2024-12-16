@@ -1,8 +1,6 @@
 """Advent of Code specific utilities"""
 from aoc_tools import read_lines
 
-DAY_DATA = '2a'
-
 
 def process(filename: str) -> int:
     """Reads and finds the solution for the specified data file
@@ -22,5 +20,5 @@ def process(filename: str) -> int:
 
 
 if __name__ == "__main__":
-    assert process(f'd{DAY_DATA}.ex.data') == 31
-    process(f'd{DAY_DATA}.data')
+    assert process('dXX.1.data') == 0
+    process('dXX.2.data')

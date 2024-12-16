@@ -77,3 +77,9 @@ Weird part 2 today. I first had to do some manual examination of resulting grids
 # Day 15
 
 One learning to highlight: if a function returns several values on a tuple, you can't just get the first one without explicitly getting the others, or it will actually contain the tuple itself. Quite obvious in retrospect.
+
+# Day 16
+
+Part 1 has taken me forever today due to some silly mistakes due to me writing ugly code. I really should know better.
+
+Small learning today regarding how to measure elapsed time.
