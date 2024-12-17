@@ -83,3 +83,7 @@ One learning to highlight: if a function returns several values on a tuple, you 
 Part 1 has taken me forever today due to some silly mistakes due to me writing ugly code. I really should know better.
 
 Small learning today regarding how to measure elapsed time.
+
+# Day 17
+
+Hard to approach second star today! Learnings: bitwise operations, that I hadn't really used before in Python.
