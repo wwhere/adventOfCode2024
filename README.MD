@@ -87,3 +87,9 @@ Small learning today regarding how to measure elapsed time.
 # Day 17
 
 Hard to approach second star today! Learnings: bitwise operations, that I hadn't really used before in Python.
+
+# Day 18
+
+Always one or two Dijkstra problems every year. For part two I am almost certain there is a smarter way of doing it, looking at the current minimal path and checking if a new byte lies in that path or not. If it does, then you would just need to recalculate a path from the previous node to the next one. Instead of that, given the limited number of bytes, I've just gone with a kind of force brute approach, using a binary search in the problem space. Worked well enough.
+
+Not much new in question of Python lessons here. I think I am now being better at using list comprehension and generators.
