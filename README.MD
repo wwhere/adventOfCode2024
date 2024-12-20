@@ -97,3 +97,7 @@ Not much new in question of Python lessons here. I think I am now being better a
 # Day 19
 
 Well, that was a day of a couple of great ideas for the wrong question. Those wrong approaches at least let me learn more about regular expressions on Python.
+
+# Day 20
+
+Not much new learnt today. My code still doesn't feel pythonic to me.
