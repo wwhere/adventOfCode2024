@@ -101,3 +101,9 @@ Well, that was a day of a couple of great ideas for the wrong question. Those wr
 # Day 20
 
 Not much new learnt today. My code still doesn't feel pythonic to me.
+
+# Day 21
+
+I chose a bad day to try and force me to write more pythonic code. Part 1 wasn't too bad, part 2 took me many hours of basically rewriting to be able to optimise it properly.
+
+Learnings: `functools.cache` to memoize out of the box instead of creating my own caches. That is handy! Lot of extra learning around lists, generators, iterators.
