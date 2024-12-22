@@ -107,3 +107,7 @@ Not much new learnt today. My code still doesn't feel pythonic to me.
 I chose a bad day to try and force me to write more pythonic code. Part 1 wasn't too bad, part 2 took me many hours of basically rewriting to be able to optimise it properly.
 
 Learnings: `functools.cache` to memoize out of the box instead of creating my own caches. That is handy! Lot of extra learning around lists, generators, iterators.
+
+# Day 22
+
+Not too hard today, even though I clearly haven't found the correct way of doing it. Just a bit of brute force is enough though. Have been using what I learned yesterday, trying to still write more pythonic code. And I have discovered 'namedtuple' and 'NamedTuple' which are very nice indeed.
