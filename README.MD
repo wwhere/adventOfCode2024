@@ -111,3 +111,7 @@ Learnings: `functools.cache` to memoize out of the box instead of creating my ow
 # Day 22
 
 Not too hard today, even though I clearly haven't found the correct way of doing it. Just a bit of brute force is enough though. Have been using what I learned yesterday, trying to still write more pythonic code. And I have discovered 'namedtuple' and 'NamedTuple' which are very nice indeed.
+
+# Day 23
+
+More practice with sets and list comprehension mostly. Also learned about 'frozenset'. Code is still ugly though.
