@@ -115,3 +115,7 @@ Not too hard today, even though I clearly haven't found the correct way of doing
 # Day 23
 
 More practice with sets and list comprehension mostly. Also learned about 'frozenset'. Code is still ugly though.
+
+# Day 24
+
+That was painful! Not ready to push my code for part 2 just yet. In the end I've done part of the solution manually, helped by the code to find where the problems were, but I want to finish it to actually produce the bits I've done manually.
