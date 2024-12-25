@@ -119,3 +119,7 @@ More practice with sets and list comprehension mostly. Also learned about 'froze
 # Day 24
 
 That was painful! Not ready to push my code for part 2 just yet. In the end I've done part of the solution manually, helped by the code to find where the problems were, but I want to finish it to actually produce the bits I've done manually.
+
+# Day 25
+
+Happy Christmas! QUick one, with a quick and dirty solution. I'm also pushing whatever I have for part 2 of day 24, even though it is still unfinished and requires manual work.
